@@ -1,0 +1,23 @@
+1. ((RANDOM)) to get single digit      
+   x=$(( RANDOM % 10))
+   echo $x
+o/p=> $ sh random.sh
+       4
+
+2. get Dice number between 1 to 6
+   x=$(( RANDOM % 6 +1))
+   echo $x
+o/p =>$ sh random.sh
+      3
+
+3. add two random dice no & print the result
+   a=$((RANDOM))
+   b=$((RANDOM))
+   add=$((a+b))
+   echo $add
+o/p =>$ sh random.sh
+      32318
+
+4 .write a program that reads 5 Random 2 digit value ,then find their    sum and the average
+  $ for i in {seq 5}; do echo $(( (RANDOM%90)+10)); done | awk '{sum+=$1} END{print sum " " sum/5}'
+o/p =>159 31.8
