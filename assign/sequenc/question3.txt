@@ -1,0 +1,9 @@
+3. add two random dice no & print the result
+
+   a=$((RANDOM))
+   b=$((RANDOM))
+   add=$((a+b))
+   echo $add
+
+o/p =>$ sh random.sh
+      32318

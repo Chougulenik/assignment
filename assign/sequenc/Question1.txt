@@ -1,0 +1,8 @@
+1.((RANDOM)) to get single digit      
+
+x=$(( RANDOM % 10))
+echo $x
+
+
+o/p=> $ sh random.sh
+       4
