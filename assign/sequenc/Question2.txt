@@ -1,9 +1,0 @@
-2. get Dice number between 1 to 6
-   
-
-x=$(( RANDOM % 6 +1))
-echo $x
-
-
-o/p =>$ sh random.sh
-      3
