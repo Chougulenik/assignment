@@ -1,0 +1,25 @@
+2. takes day and month from the command line and print true if dayof    month
+
+read -p "Enter date : " date
+read -p "Enter Month : " Month
+
+if (($Month <=6 && $date <=20)) && (($Month >=3 && $Month <= 6)) && (($date < 31))
+then
+        echo $Month $date "true"
+else
+        echo "false"
+fi
+
+o/p =>
+
+$ sh dateMonth.sh
+Enter date : 12
+Enter Month : 5
+5 12 true
+
+$ sh dateMonth.sh
+Enter date : 1
+Enter Month : 1
+false
+
+

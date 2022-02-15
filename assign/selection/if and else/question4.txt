@@ -1,0 +1,17 @@
+4.coin flip and print head and tail
+
+coin=$((RANDOM %2))
+if [ $coin -eq 1 ]
+then
+        echo "head"
+else
+        echo "tail"
+fi
+
+o/p =>
+
+$ sh headtail.sh
+tail
+
+$ sh headtail.sh
+head
